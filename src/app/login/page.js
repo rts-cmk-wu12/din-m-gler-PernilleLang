@@ -6,13 +6,6 @@ import { useActionState, useEffect } from "react"
 
 export default function Login () {
 
-    // const response = await fetch(
-    //     "https://dinmaegler.onrender.com/auth/local",
-    //     {
-    //         "identifier": "carsten@mail.dk",
-    //         "password": "654321"
-    //     }
-    // )
 
     const [formState, formAction] = useActionState(login, null)
 

@@ -9,6 +9,7 @@ export default async function Workers () {
     )
 
     const moreworkers = await response.json();
+    
     console.log(moreworkers);
 
     return(
