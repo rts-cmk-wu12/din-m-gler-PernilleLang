@@ -14,7 +14,7 @@ export default async function Somehouses () {
         <section className="flex flex-col justify-center items-center mx-auto margin-style pt-[3em]">
             <h2 className="font-bold">Udvalgte Boliger</h2>
             <p className="text-xs pt-[1em] w-[35em]">There are many variations of passages of Lorem Ipsum available but the this in majority have suffered alteration in some</p>
-            <div className="mx-auto margin-style grid grid-cols-2 gap-[1em]">
+            <div className="margin-style grid grid-cols-2 gap-[1em]">
                 {somehouses.map((fewhouses)=> (
                     <HouseInfo key={fewhouses.id} house={fewhouses}></HouseInfo> 
                 ))}

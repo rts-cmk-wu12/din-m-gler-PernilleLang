@@ -1,4 +1,4 @@
-import Frontbanner from "@/components/frontbanner";
+import News from "@/components/news";
 import Frontinfo from "@/components/frontinfo";
 import Frontphoto from "@/components/frontphoto";
 import Process from "@/components/process";
@@ -12,7 +12,7 @@ export default function Frontside () {
             <Frontphoto/>
             <Frontinfo/>
             <Somehouses/>
-            <Frontbanner/>
+            <News/>
             <Workers/>
             <Process/>
         </main>

@@ -10,8 +10,9 @@ export default function Header () {
     return(
         <header className="mb-[1em]">
             <div>
-                <div className="bg-sky-950 text-white w-[70em] mx-auto margin-style flex justify-between">
-                    <div className="flex h-[2.5em] w-[25em]">
+                <div className="bg-sky-950 text-white flex justify-between">
+                    <div className="flex justify-between w-[70em] margin-style">
+                        <div className="flex h-[2.5em] w-[25em]">
                             <div className="flex items-center">
                                 <Image src={paperplane} alt="paperplane" height={15} width={15}/>
                                 <p className="text-xs">4000@dinmaegler.com</p>
@@ -20,16 +21,18 @@ export default function Header () {
                                 <Image src={call} alt="call" height={15} width={15}/>
                                 <p className="text-xs">+45 7070 4000</p>
                             </div>
-
-                    </div>
-                    <div className="flex items-center w-[15em] justify-end">
-                        <Image src={user} alt="user" height={15} width={15}/>
-                        <p className="text-xs">Log ind</p>
+                        </div>
+                        <div className="flex items-center w-[15em] justify-end">
+                            <Image src={user} alt="user" height={15} width={15}/>
+                            <Link href="/login">
+                                <p className="text-xs">Log ind</p>
+                            </Link> 
+                        </div>
                     </div>
                 </div>
-                <div className="flex justify-between w-[70em] mx-auto margin-style">
+                <div className="flex justify-between w-[70em] margin-style">
                     <div className="flex items-end w-[15em] mt-[1em]">
-                        <Link href="/frontinfo">
+                        <Link href="/">
                             <Image src={dinmaegler} alt="dinmaegler" height={40} width={50} className="h-[3em] w-[5em]"/>
                         </Link>
                         <h1 className="h-[23px] text-sky-950 font-bold text-xl ml-[0.5em]">DIN MÆGLER</h1>
@@ -42,17 +45,17 @@ export default function Header () {
                                 </Link>
                             </li>    
                             <li className="text-xs">
-                                <Link href="/">
+                                <Link href="/allworkers">
                                  Mægler
                                 </Link>
                             </li>    
                             <li className="text-xs">
-                                <Link href="/">
+                                <Link href="/favorite">
                                  Mine favoritter
                                 </Link>
                             </li>    
                             <li className="text-xs">
-                                <Link href="/">
+                                <Link href="/contact">
                                  Kontakt os
                                 </Link>
                             </li>    
