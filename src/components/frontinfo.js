@@ -8,6 +8,7 @@ import flags from "../photos/flags.png"
 
 
 export default function Frontinfo () {
+
     return(
     <section className="flex justify-center flex-col mt-[4em] mb-[2em]" >
         <div className="flex justify-center mx-auto margin-style">
