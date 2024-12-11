@@ -5,7 +5,6 @@ import phone from "../photos/phone.png"
 import flyer from "../photos/flyer.png"
 import mark from "../photos/mark.png"
 
-
 export default function Footer () {
 
     return(
