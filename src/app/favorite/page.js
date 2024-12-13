@@ -3,24 +3,24 @@ import HouseInfo from "@/components/houseinfo";
 
 export default async function Favorite () {
 
-    const cookieStore = await cookies()
+    // const cookieStore = await cookies()
 
-    const cookieToken = cookieStore.get("dm_token")
+    // const cookieToken = cookieStore.get("dm_token")
 
-    console.log(cookieToken)
+    // console.log(cookieToken)
 
-    const response = await fetch("https://dinmaegler.onrender.com/users/me", {
-        "method": "GET",
-        "headers": {
-          "Authorization": "Bearer " + cookieToken.value
-        }
-      })
-        // .then(response => console.log(response))
-        .catch(err => console.error(err));
+    // const response = await fetch("https://dinmaegler.onrender.com/users/me", {
+    //     "method": "GET",
+    //     "headers": {
+    //       "Authorization": "Bearer " + cookieToken.value
+    //     }
+    //   })
+    //     // .then(response => console.log(response))
+    //     .catch(err => console.error(err));
 
-        const favoriteHome = await response.json()
+    //     const favoriteHome = await response.json()
 
-        console.log(favoriteHome)       
+    //     console.log(favoriteHome)       
     
 
     return (
@@ -32,11 +32,11 @@ export default async function Favorite () {
         <form action="" className="margin-style border-b pb-[0.5em]">
             <input placeholder="Søg i favoritter" className="pl-[0.5em] border border-gray-200 text-xs h-[2em] w-[15.5em]"/>
         </form>
-        <div>
+        {/* <div>
             {favoriteHome.homes.map((favoriteHouse) => (
                 <HouseInfo key={favoriteHouse.id} favoriteHouse={favoriteHouse}></HouseInfo>
             ))}
-        </div>
+        </div> */}
         </section>
     )
 }

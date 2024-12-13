@@ -16,9 +16,9 @@ export default function HouseInfo ( {house} ) {
     return(
         <section className="flex flex-col mt-[3em] mb-[2em] w-[100%]">
             <div className="relative">
-                <img src={house.images[0].url} alt="houseimage" height={100} width={350} className="h-[15em] w-[100%]"/>
+                <Image src={house.images[0].url} alt="houseimage" height={150} width={350} className="h-[15em] w-[100%]"/>
                 <div className="absolute bg-white top-2 right-2 z-10 rounded-full">
-                    <Image src={love} alt="love" height={15} width={20}/>
+                <Image src={love} alt="love" height={15} width={20}/>
                 </div>
             </div>
             <div className="flex flex-col justify-start pl-[1em] shadow-lg pb-[1em]">

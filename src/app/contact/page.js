@@ -49,7 +49,7 @@ export default function Contact () {
                     </div>
         </article>
         </section>
-        <Image src={map} alt="mark" height={400} width={450} className="h-[20em] w-[100%] mt-[4em]"/>
+        <Image src={map} alt="map" height={400} width={450} className="h-[20em] w-[100%] mt-[4em]"/>
         </section>
     )
 
