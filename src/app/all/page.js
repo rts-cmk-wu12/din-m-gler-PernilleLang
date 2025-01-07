@@ -7,7 +7,7 @@ export default async function All () {
     )
 
     const forsale = await response.json();
-    console.log(forsale);
+    console.log("hej", forsale);
 
     return(
         <section>
